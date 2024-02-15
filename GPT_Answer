@@ -1,71 +1,32 @@
-[
-x^{\log3(x) - 2} = 27
-]
+\documentclass{article}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
 
-First, notice that (27 = 3^3). Thus, the equation can be rewritten as:
+\begin{document}
 
-[
-x^{\log_3(x) - 2} = 3^3
-]
+Взаимодействие уксусной кислоты с карбонатом натрия является реакцией нейтрализации, в ходе которой происходит образование соли, воды и выделение углекислого газа. Уксусная кислота (( \mathrm{CH_3COOH} )) реагирует с карбонатом натрия (( \mathrm{Na_2CO_3} )) с образованием ацетата натрия (( \mathrm{CH_3COONa} )), воды (( \mathrm{H_2O} )) и углекислого газа (( \mathrm{CO_2} )).
 
-Now, let's use the property of logarithms that states (a^{\log_a(b)} = b), where (a > 0) and (a \neq 1). In this case, if we can bring the base of the exponent on the left side to 3, we can apply this property. Let's introduce a new variable:
+Молекулярное уравнение реакции:
+\begin{equation}
+2\mathrm{CH_3COOH} + \mathrm{Na_2CO_3} \rightarrow 2\mathrm{CH_3COONa} + \mathrm{H_2O} + \mathrm{CO_2} \uparrow
+\end{equation}
 
-[
-y = \log_3(x)
-]
+Ионное уравнение реакции:
 
-Then (x = 3^y), and the equation becomes:
+Поскольку уксусная кислота является слабой кислотой, она не полностью диссоциирует на ионы в водном растворе. Однако, для упрощения, мы можем представить её в виде ионов:
+\begin{equation}
+2\mathrm{CH_3COO^-} + 2\mathrm{H^+} + 2\mathrm{Na^+} + \mathrm{CO_3^{2-}} \rightarrow 2\mathrm{CH_3COO^-} + 2\mathrm{Na^+} + \mathrm{H_2O} + \mathrm{CO_2} \uparrow
+\end{equation}
 
-[
-(3^y)^{y - 2} = 3^3
-]
+Теперь упростим уравнение, исключив ионы, которые не изменяются в ходе реакции (спектаторные ионы):
+\begin{equation}
+2\mathrm{H^+} + \mathrm{CO_3^{2-}} \rightarrow \mathrm{H_2O} + \mathrm{CO_2} \uparrow
+\end{equation}
 
-Applying the property of exponents ((a^b)^c = a^{b \cdot c}):
+Заключение для опыта:
 
-[
-3^{y(y - 2)} = 3^3
-]
+В ходе проведения опыта наблюдалось обильное выделение бесцветного газа, который является углекислым газом (( \mathrm{CO_2} )). Это подтверждает характерную реакцию кислоты с карбонатом, в результате которой образуется соль (в данном случае ацетат натрия), вода и углекислый газ. Выделение газа также можно подтвердить с помощью прозрачной известковой воды (раствора ( \mathrm{Ca(OH)_2} )), которая помутнеет при пропускании через неё углекислого газа из-за образования нерастворимого карбоната кальция (( \mathrm{CaCO_3} )). Этот опыт демонстрирует типичную реакцию кислоты с карбонатом, что также иллюстрирует свойства укссусной кислоты как кислоты и карбоната натрия как основания.
 
-Now that the bases of the exponents on both sides are equal, we can equate the exponents:
-
-[
-y(y - 2) = 3
-]
-
-Expanding the brackets:
-
-[
-y^2 - 2y = 3
-]
-
-Moving all terms to one side of the equation:
-
-[
-y^2 - 2y - 3 = 0
-]
-
-Solving the quadratic equation:
-
-[
-D = b^2 - 4ac = (-2)^2 - 4 \cdot 1 \cdot (-3) = 4 + 12 = 16
-]
-
-[
-y{1,2} = \frac{-b \pm \sqrt{D}}{2a} = \frac{2 \pm \sqrt{16}}{2} = \frac{2 \pm 4}{2}
-]
-
-We obtain two roots:
-
-[
-y_1 = \frac{2 + 4}{2} = 3
-]
-[
-y_2 = \frac{2 - 4}{2} = -1
-]
-
-Now let's go back to our definition (y = \log_3(x)):
-
-(\log_3(x) = 3) means (x = 3^3 = 27).
-(\log_3(x) = -1) means (x = 3^{-1} = \frac{1}{3}).
-
-Both of these values are solutions to the original equation since they satisfy the condition (x > 0).
+\end{document}
